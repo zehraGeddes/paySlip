@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Frank Body Happy Xmas</title>
+
+  <link href="assets/css/main.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/robot.js"></script>
+</head>
+  <body>
+    <p>Enter coordinates between 0 to 5.</p>
+    <form id="generatePaySlip-form">
+      <label>Name:</label><input type="text" name="e_firstName" /><br/>
+      <label>Surname:</label><input type="text" name="e_lastName" /><br/>
+      <label>Annual Salary:</label><input type="text" name="salary" /><br/>
+      <label>Super Rate:</label><input type="text" name="super" /><br/>
+
+      <label>Payment Month:</label><select name="placeF">
+        <option value="north" selected="selected">January</option>
+        <option value="west">February</option>
+        <option value="south">March</option>
+        <option value="east">April</option>
+        <option value="west">May</option>
+        <option value="south">June</option>
+        <option value="east">July</option>
+        <option value="west">August</option>
+        <option value="south">September</option>
+        <option value="east">October</option>
+        <option value="west">November</option>
+        <option value="south">December</option>
+      </select>
+      <button>Place</button>
+    </form>
+
+    <button id="move" class="directionalButton" disabled >Move</button>
+    <button id="left" class="directionalButton" disabled >Left</button>
+    <button id="right" class="directionalButton" disabled >Right</button>
+    <button id="report" class="directionalButton" disabled >Report</button>
+    <div id="report-board"></div>
+  </body>
+</html>
